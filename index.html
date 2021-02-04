@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Calculator : Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- math box starts -->
+    <div class="box">
+
+        <!-- Addition -->
+        <div class="blog1">
+            <h4>10 + 140</h4>
+            <h1 id="num1"></h1>
+            <button onclick="cul1();">+</button>
+        </div>
+        <!-- Subtraction -->
+        <div class="blog1">
+            <h4>236 - 192</h4>
+            <h1 id="num2"></h1>
+            <button onclick="cul2();">-</button>
+        </div>
+        <!-- Multiplication -->
+        <div class="blog1">
+            <h4>9 x 6</h4>
+            <h1 id="num3"></h1>
+            <button onclick="cul3();">*</button>
+        </div>
+        <!-- Division -->
+        <div class="blog1">
+            <h4>125 / 5</h4>
+            <h1 id="num4"></h1>
+            <button onclick="cul4();">/</button>
+        </div>
+    </div>
+    <!-- math box starts -->
+
+    <script>
+        // Addition;
+        function cul1(){
+            var a = 10;
+            var b = 140;
+        
+            var add = a + b;
+        
+            document.getElementById("num1").innerHTML = add;
+            document.getElementById("num1").style.color = "blue";
+        }
+        
+        // Subtraction;
+        function cul2(){
+            var a = 236;
+            var b = 192;
+        
+            var sub = a - b;
+        
+            document.getElementById("num2").innerHTML = sub;
+            document.getElementById("num2").style.color = "red";
+        }
+        
+        // Multiplication;
+        function cul3(){
+            var a = 9;
+            var b = 6;
+        
+            var Multiplication = a * b;
+        
+            document.getElementById("num3").innerHTML = Multiplication;
+            document.getElementById("num3").style.color = "yellow";
+        }
+
+        // Division;
+        function cul4(){
+            var a = 125;
+            var b = 5;
+        
+            var Division = a / b;
+        
+            document.getElementById("num4").innerHTML = Division;
+            document.getElementById("num4").style.color = "skyblue";
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
